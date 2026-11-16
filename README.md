@@ -4,7 +4,7 @@ En este proyecto desarrollé una aplicación por consola en Python conectada a u
 
 ## 1. Organización del Proyecto
 
-Para mantener el código limpio y fácil de mantener, dividí la aplicación en módulos siguiendo la misma separación en tres capas que he utilizado en proyectos anteriores de la materia:
+Para mantener el código limpio y fácil de mantener, dividí la aplicación en módulos siguiendo la misma separación en tres capas:
 
 * **`modelos.py` (Capa de Datos y Conexión Cloud):** Carga las credenciales desde variables de entorno (`.env`), establece la conexión remota cifrada (`neo4j+s://`) hacia Neo4j AuraDB y define los nodos (`Usuario`, `Empresa`, `Habilidad`) y relaciones con propiedades (`ConoceA`, `TrabajaEn`, `TieneHabilidad`) mediante **Neomodel** (sobre el driver oficial `neo4j`).
 * **`controlador.py` (Capa de Lógica y Consultas):** Implementa las validaciones, las operaciones CRUD completas de nodos y relaciones, y las consultas especializadas en Cypher (`shortestPath`, recomendación de contactos a 2 saltos, coincidencia de habilidades y búsqueda de contactos por empresa).
