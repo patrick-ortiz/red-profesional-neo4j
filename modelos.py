@@ -1,4 +1,5 @@
 import os
+import logging
 from dotenv import load_dotenv
 from neomodel import (
     StructuredNode,
@@ -8,6 +9,8 @@ from neomodel import (
     RelationshipTo,
     db,
 )
+
+logging.getLogger("neo4j.notifications").setLevel(logging.ERROR)
 
 RUTA_ENV = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
 load_dotenv(RUTA_ENV)
