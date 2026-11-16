@@ -14,7 +14,7 @@ Para mantener el código limpio y fácil de mantener, dividí la aplicación en 
 ## 2. Requerimientos Previos
 
 * **Python 3.10+**
-* Una instancia activa en la nube de **Neo4j AuraDB** (verifica en [console.neo4j.io](https://console.neo4j.io) que el estado sea *Running* y no *Paused*).
+* Una instancia activa en la nube de **Neo4j AuraDB**.
 * Conexión a internet para comunicarse por el protocolo Bolt sobre TLS (`neo4j+s://`).
 
 ## 3. Guía de Instalación
